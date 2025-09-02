@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Éclat | Premium Fashion Apparel</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav class="container">
+            <a href="#" class="logo">Éclat</a>
+            <ul class="nav-links">
+                <li><a href="#new-arrivals">New Arrivals</a></li>
+                <li><a href="#collections">Collections</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-icons">
+                <button id="theme-toggle" class="icon-btn">🌙</button>
+                <button id="cart-btn" class="icon-btn">🛒</button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Elevate Your Style</h1>
+            <p>Discover our exclusive collection of premium fashion apparel</p>
+            <button id="explore-btn" class="cta-button">Explore Collection</button>
+        </div>
+    </section>
+
+    <!-- New Arrivals Section -->
+    <section id="new-arrivals" class="section">
+        <div class="container">
+            <h2>New Arrivals</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="https://images.pexels.com/photos/1884584/pexels-photo-1884584.jpeg" alt="Premium Blouse" class="product-img">
+                    <h3>Elegant Silk Blouse</h3>
+                    <p class="price">$89.99</p>
+                    <button class="add-to-cart" data-product="Elegant Silk Blouse" data-price="89.99">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="https://images.pexels.com/photos/2983464/pexels-photo-2983464.jpeg" alt="Designer Dress" class="product-img">
+                    <h3>Chic 4C Curly Wig</h3>
+                    <p class="price">$159.99</p>
+                    <button class="add-to-cart" data-product="Designer Evening Dress" data-price="159.99">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="https://images.pexels.com/photos/7679468/pexels-photo-7679468.jpeg" alt="Tailored Pants" class="product-img">
+                    <h3>Tailored Wide-Leg Pants</h3>
+                    <p class="price">$119.99</p>
+                    <button class="add-to-cart" data-product="Tailored Wide-Leg Pants" data-price="119.99">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section with Form -->
+    <section class="newsletter">
+        <div class="container">
+            <h2>Subscribe to Our Newsletter</h2>
+            <p>Get exclusive offers and updates on new collections</p>
+            <form id="newsletter-form">
+                <div class="form-group">
+                    <input type="text" id="name" placeholder="Your Name">
+                    <span class="error-message" id="name-error"></span>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" placeholder="Your Email">
+                    <span class="error-message" id="email-error"></span>
+                </div>
+                <div class="form-group">
+                    <select id="preference">
+                        <option value="">Select your fashion preference</option>
+                        <option value="casual">Casual Wear</option>
+                        <option value="formal">Formal Wear</option>
+                        <option value="both">Both</option>
+                    </select>
+                    <span class="error-message" id="preference-error"></span>
+                </div>
+                <button type="submit" class="cta-button">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Image Gallery with Filter -->
+    <section id="collections" class="section">
+        <div class="container">
+            <h2>Our Collections</h2>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="women">Women</button>
+                <button class="filter-btn" data-filter="men">Men</button>
+                <button class="filter-btn" data-filter="accessories">Accessories</button>
+            </div>
+            <div class="gallery">
+                <div class="gallery-item" data-category="women">
+                    <img src="https://images.pexels.com/photos/1376038/pexels-photo-1376038.jpeg" alt="Women's Collection">
+                    <div class="gallery-overlay">
+                        <h3>Women's Collection</h3>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="men">
+                    <img src="https://images.pexels.com/photos/532220/pexels-photo-532220.jpeg" alt="Men's Collection">
+                    <div class="gallery-overlay">
+                        <h3>Men's Collection</h3>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="accessories">
+                    <img src="https://images.pexels.com/photos/2983463/pexels-photo-2983463.jpeg" alt="Accessories">
+                    <div class="gallery-overlay">
+                        <h3>Luxury Accessories</h3>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="women">
+                    <img src="https://images.pexels.com/photos/794062/pexels-photo-794062.jpeg" alt="Summer Collection">
+                    <div class="gallery-overlay">
+                        <h3>Summer Essentials</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Shopping Cart Modal -->
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Your Shopping Cart</h2>
+            <div id="cart-items"></div>
+            <div id="cart-total">
+                <p>Total: $<span id="total-amount">0.00</span></p>
+            </div>
+            <button id="checkout-btn" class="cta-button">Checkout</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Éclat Fashion. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

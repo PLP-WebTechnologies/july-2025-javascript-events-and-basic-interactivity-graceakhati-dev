@@ -1,58 +1,65 @@
-# 🧠 Assignment: Interactive Web Pages with JavaScript
+🖥️ Assignment: Interactive Web Pages with JavaScript
+📌 Overview
 
-Welcome to the exciting world of interactivity! This assignment is all about **making your web pages feel alive**. You’ll learn how to respond to user actions, build engaging components, and validate form input—without reloading the page. This is where JavaScript gets fun, practical, and powerful. 🚀
+This project was built as part of the Power Learn Project – Software Development Course.
+My goal was to create an interactive webpage using HTML, CSS, and JavaScript that responds to user actions, features a shopping cart, validates form inputs, and offers dynamic content filtering.
 
----
+🚀 Features
 
-## 🎉 Part 1: JavaScript Event Handling and Interactive Elements
+🌙 Light/Dark Mode Toggle (saved to localStorage)
 
-Let’s start with the basics of **event handling**. You'll set up JavaScript to listen for user actions like clicks, mouseovers, keyboard input, and more—and respond to them in meaningful ways.
+🛒 Shopping Cart System with add/remove functionality, persistent storage, and checkout
 
-**Goal:** Use event listeners to react to user behavior and trigger changes on the page (e.g., showing messages, toggling classes, hiding/showing content).
+📧 Newsletter Subscription Form with JavaScript validation (name, email, preference)
 
----
+🖼️ Image Gallery Filtering (show/hide items by category)
 
-## 🎮 Part 2: Building Interactive Elements
+🎯 Smooth Scrolling navigation
 
-Now it’s time to apply what you’ve learned by creating your own mini interactive features. You can build things like:
+🔔 Custom Notifications on actions like “Add to Cart”
 
-* A light/dark mode toggle
-* A counter or button game
-* A collapsible FAQ section
-* A simple dropdown menu
-* A tabbed interface
+📂 Project Structure
+├── index.html    # Main webpage structure
+├── style.css     # Styling and responsive design
+├── script.js     # JavaScript interactivity and form validation
+└── README.md     # Project documentation
 
-**Goal:** Use DOM manipulation + events to make the page dynamic and engaging. Be creative!
+🛠️ Technologies Used
 
----
+HTML5
 
-## 📋✅ Part 3: Form Validation with JavaScript
+CSS3
 
-Forms are essential to the web—and validating them properly is key to good user experience. You’ll build a form with multiple input fields (name, email, password, etc.) and write JavaScript to validate each field when the user submits or types.
+JavaScript (DOM manipulation, Events, localStorage)
 
-**Goal:** Prevent incorrect form submissions by writing custom validation logic using conditions and regular expressions. Show user-friendly error messages and success feedback.
+📸 Demo Preview
 
----
+Homepage: Hero section with navigation and theme toggle
 
-## Deliverables
+New Arrivals: Product cards with Add to Cart buttons
 
-* `index.html`: Your structured web page with at least one form and several interactive sections
-* `script.js`: Your JavaScript file with:
+Newsletter Form: Subscription with validation
 
-  * Event handling for buttons, inputs, or links
-  * At least 2 interactive features created from scratch
-  * A fully functioning custom form validation (no HTML5-only validation)
-* `style.css` (optional but encouraged): To style your interactive elements
+Collections Gallery: Filterable product categories
 
-Each section of your JavaScript should be commented to explain its purpose.
+Shopping Cart Modal: Cart items and checkout functionality
 
----
+🎯 Learning Outcomes
 
-## Outcome
+Mastered DOM manipulation and event handling
 
-* Use of event listeners and appropriate event types
-* Creativity and functionality of interactive elements
-* Form validation accuracy and helpfulness of feedback
-* Clear, modular, and well-commented JavaScript code
-* A clean and functional user experience
+Built custom form validation logic
 
+Applied localStorage for theme preference and cart persistence
+
+Created a clean, interactive, and user-friendly webpage
+
+👩🏽‍💻 Author
+
+Grace Akhati
+
+📧 Email: graceakhati2@gmail.com
+
+💼 LinkedIn: Grace Akhati
+
+🌐 Portfolio: https://github.com/graceakhati-dev
